@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent has-shadow is-spaced"
+        className="navbar has-shadow is-spaced"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -73,7 +73,7 @@ const Navbar = class extends React.Component {
                 <span className="icon has-text-success"><FaMap /></span>
                 <span>Map</span>
               </Link>
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/gallery">
                 <span className="icon has-text-warning"><FaImages /></span>
                 <span>Gallery</span>
               </Link>

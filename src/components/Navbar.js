@@ -88,10 +88,10 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <div class="navbar-item">
-                <div class="field is-grouped is-grouped-multiline">
-                  <p class="control">
-                    <a class="button is-medium is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
+              <div className="navbar-item">
+                <div className="field is-grouped is-grouped-multiline">
+                  <p className="control">
+                    <a className="button is-medium is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
                       <strong>Book</strong>
                     </a>
                   </p>

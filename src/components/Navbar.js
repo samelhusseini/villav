@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
-import { FaInfo, FaMap, FaHeart, FaImages, FaIdBadge } from 'react-icons/fa';
+import { FaInfo, FaMap, FaMapMarker, FaHeart, FaImages, FaIdBadge } from 'react-icons/fa';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -69,13 +69,17 @@ const Navbar = class extends React.Component {
                 <span className="icon has-text-primary"><FaInfo /></span>
                 <span>About</span>
               </Link>
-              <Link className="navbar-item" to="/map">
-                <span className="icon has-text-success"><FaMap /></span>
-                <span>Map</span>
+              <Link className="navbar-item" to="/neighborhood">
+                <span className="icon has-text-success"><FaMapMarker /></span>
+                <span>Neighborhood</span>
               </Link>
               <Link className="navbar-item" to="/gallery">
                 <span className="icon has-text-warning"><FaImages /></span>
                 <span>Gallery</span>
+              </Link>
+              <Link className="navbar-item" to="/map">
+                <span className="icon has-text-info"><FaMap /></span>
+                <span>Map</span>
               </Link>
               <Link className="navbar-item" to="/about">
                 <span className="icon has-text-danger"><FaHeart /></span>
@@ -88,7 +92,7 @@ const Navbar = class extends React.Component {
                 Blog
               </Link> */}
               <Link className="navbar-item" to="/contact">
-                <span className="icon has-text-info"><FaIdBadge /></span>
+                <span className="icon"><FaIdBadge /></span>
                 <span>Contact</span>
               </Link>
             </div>

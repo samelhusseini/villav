@@ -3,7 +3,7 @@ import React from 'react'
 
 import logo from '../img/logo.svg'
 
-import { FaFacebook, FaWhatsapp,  FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = class extends React.Component {
   render() {
@@ -82,13 +82,13 @@ const Footer = class extends React.Component {
                   <FaTwitter size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#40B1E1' }} />
                 </a> */}
                 <a title="instagram" href="https://instagram.com/villav.gr">
-                  <FaInstagram size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#D42B5D' }}  />
+                  <FaInstagram size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#D42B5D' }} />
                 </a>
               </div>
             </div>
           </div>
-          <div className="column is-text-small">
-            Copyright 2019 - Villa V
+          <div className="column" style={{ fontSize: '12px' }}>
+            Copyright © 2018-2019 - Villa V
           </div>
         </div>
       </footer>

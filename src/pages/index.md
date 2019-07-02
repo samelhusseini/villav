@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: 
+title: Villa V
 image: /img/home-jumbotron.jpg
-heading: 
-subheading: 
+heading: Test
+subheading: Test
 mainpitch:
   title: Villa V
   description: >

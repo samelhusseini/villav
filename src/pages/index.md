@@ -6,7 +6,7 @@ heading: Test
 subheading: Test
 mainpitch:
   title: Villa V
-  description: >
+  description: |
     Your home away from home on the island of Spetses.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -65,3 +65,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+

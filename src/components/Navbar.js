@@ -44,6 +44,11 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
             </Link>
+            <a className="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+              <span className="button is-small is-primary">
+                Book
+              </span>
+            </a>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -61,7 +66,7 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start">
               <Link className="navbar-item" to="/about">
-                <span className="icon has-text-primary"><FaInfo className="inline"/></span>
+                <span className="icon has-text-primary"><FaInfo /></span>
                 <span>About</span>
               </Link>
               <Link className="navbar-item" to="/map">
@@ -87,7 +92,7 @@ const Navbar = class extends React.Component {
                 <span>Contact</span>
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
+            <div className="navbar-end has-text-centered is-hidden-touch">
               <div className="navbar-item">
                 <div className="field is-grouped is-grouped-multiline">
                   <p className="control">

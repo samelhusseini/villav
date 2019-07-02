@@ -2,9 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import logo from '../img/logo.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
 
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 

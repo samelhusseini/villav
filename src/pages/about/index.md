@@ -3,17 +3,13 @@ templateKey: 'about-page'
 path: /about
 title: About our values
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Welcome to Villa V
+Welcome to Villa V, your home away from home on the island of Spetses. This Guidebook is intended to help you get acquainted with the area and your Spetses home. We've distilled our ____ years of area knowledge for you to enjoy the very best that Spetses has to offer! Along with our area guide you'll also find everything you need to know about this home.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+### Your Villa
+We have sought to equip the home to a high standard and to anticipate your needs by providing all the things you might want for a luxurious stay. Body wash, shampoo and conditioner are available in the bathroom. The kitchen has been stocked with tea, coffee, and hot chocolate for when you wake up to the stunning view. A hair dryer is provided as standard and a washer / dryer in the building is available so that you don’t have to worry about luggage restrictions.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### Our Philosophy
+You want to have a wonderful holiday and we want that for you too.  We believe that when you are here this is your home for however long you are staying and that you should be relaxed, comfortable and happy.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+### Welcome to your perfect vacation in Spetses, Greece!

@@ -2,16 +2,35 @@
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$kaldi-red: #00A6A8
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
+$blue: hsl(217, 71%, 53%)
+$size-1: 3rem
+$gap: 32px
+$easing: ease-out
+$radius-large: 6px
+
+$turquoise: #01D1B2
+
+$primary: $turquoise
+$link: $blue
+$info: $cyan
+$success: $green
+$dark: $grey-darker
+$text: $grey-dark
+$background: $white-ter
+
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: #2c3e50
 
-.navbar .navbar-menu
-  box-shadow:none !important
+$family-sans-serif: "Montserrat", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$family-primary: $family-sans-serif
+$family-secondary: "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+.navbar.is-spaced
+  box-shadow: 0 2px 0 0 #f5f5f5
 
 .content .taglist
   list-style: none
@@ -71,17 +90,20 @@ $black: #2b2523
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item .icon
-  color: $primary
-// Override for use of svg's from https://simpleicons.org/
-.icon svg
-  width: 1.5rem
-  height: 1.5rem
-  fill: currentColor
+.navbar-item
+  font-family: $family-secondary
+.navbar-item .icon > svg
+  width: 1rem
+  height: 1rem
+
+a.navbar-item>.icon:not(:last-child)
+  margin-left: -.25em
+  margin-right: .25em
+
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 1rem 0rem 0rem
   background-color: transparent
 
 //Menu overrides
@@ -94,6 +116,11 @@ $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
 
 
+.title
+  font-family: $family-secondary
+.subtitle
+  color: #7a7a7a !important
+
 .menu-label
   font-size: 1em !important
   text-align: left
@@ -101,7 +128,7 @@ $menu-label-color: $white-ter
   list-style: none !important
   text-align: left
 .social
-  padding: 2em
+  padding: 2em !important
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em

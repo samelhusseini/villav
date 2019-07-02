@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import { FaInfo, FaMap, FaHeart, FaImages, FaIdBadge } from 'react-icons/fa';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -23,11 +23,11 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
+            navBarActiveClass: 'is-active',
+          })
           : this.setState({
-              navBarActiveClass: '',
-            })
+            navBarActiveClass: '',
+          })
       }
     )
   }
@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-transparent has-shadow is-spaced"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -59,34 +59,45 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-start">
               <Link className="navbar-item" to="/about">
-                About
+                <span className="icon has-text-primary"><FaInfo className="inline"/></span>
+                <span>About</span>
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/map">
+                <span className="icon has-text-success"><FaMap /></span>
+                <span>Map</span>
+              </Link>
+              <Link className="navbar-item" to="/about">
+                <span className="icon has-text-warning"><FaImages /></span>
+                <span>Gallery</span>
+              </Link>
+              <Link className="navbar-item" to="/about">
+                <span className="icon has-text-danger"><FaHeart /></span>
+                <span>Reviews</span>
+              </Link>
+              {/* <Link className="navbar-item" to="/products">
                 Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
+              </Link> */}
+              {/* <Link className="navbar-item" to="/blog">
                 Blog
-              </Link>
+              </Link> */}
               <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+                <span className="icon has-text-info"><FaIdBadge /></span>
+                <span>Contact</span>
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <div class="navbar-item">
+                <div class="field is-grouped is-grouped-multiline">
+                  <p class="control">
+                    <a class="button is-medium is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
+                      <strong>Book</strong>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

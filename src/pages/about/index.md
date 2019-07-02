@@ -1,7 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: About Us
 ---
 ### Welcome to Villa V
 Welcome to Villa V, your home away from home on the island of Spetses. This Guidebook is intended to help you get acquainted with the area and your Spetses home. We've distilled our ____ years of area knowledge for you to enjoy the very best that Spetses has to offer! Along with our area guide you'll also find everything you need to know about this home.

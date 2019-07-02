@@ -31,7 +31,7 @@ export default class Index extends React.Component {
         return (
             <Layout>
                 <section>
-                    <ImageGallery items={images} autoPlay={false} />
+                    <ImageGallery items={images} autoPlay={false} showThumbnails={false} />
                 </section>
             </Layout>
         )

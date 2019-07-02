@@ -75,13 +75,13 @@ const Footer = class extends React.Component {
                 <a title="whatsapp" href="https://wa.me/17347264265">
                   <FaWhatsapp size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#25D366' }} />
                 </a>
-                <a title="facebook" href="https://facebook.com">
+                {/* <a title="facebook" href="https://facebook.com">
                   <FaFacebook size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#0080F8' }}  />
                 </a>
                 <a title="twitter" href="https://twitter.com">
                   <FaTwitter size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#40B1E1' }} />
-                </a>
-                <a title="instagram" href="https://instagram.com">
+                </a> */}
+                <a title="instagram" href="https://instagram.com/villav.gr">
                   <FaInstagram size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#D42B5D' }}  />
                 </a>
               </div>

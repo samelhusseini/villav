@@ -96,7 +96,7 @@ const Navbar = class extends React.Component {
               <div className="navbar-item">
                 <div className="field is-grouped is-grouped-multiline">
                   <p className="control">
-                    <a className="button is-medium is-primary" href="https://airbnb.com">
+                    <a className="button is-medium is-primary" href="https://airbnb.com" target="_blank">
                       <strong>Book</strong>
                     </a>
                   </p>

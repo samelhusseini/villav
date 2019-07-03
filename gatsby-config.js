@@ -1,6 +1,6 @@
 var proxy = require('http-proxy-middleware')
 
-const cfg = {
+module.exports = {
   siteMetadata: {
     title: 'Villa V - Luxurious island house with magical view - for Rent in Spetses, Attica, Greece',
     description: 'Villa V, designed and decorated by a leading Greek architect, is the perfect destination for (up to) 10 vacationers looking to experience Greece in its full beauty. With 5 bedrooms, each with its own bathroom and shower, a private pool, a fully-equipped kitchen, a fully-fenced garden and expansive courtyard, a Weber gas BBQ, and Wi-Fi everywhere, inside and outside within the property, you’ll have everything needed to make the most of your trip.',
@@ -90,6 +90,14 @@ const cfg = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-143239978-1", // <- your tracking ID
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+      }
+    }
   ],
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
@@ -104,18 +112,4 @@ const cfg = {
       })
     )
   },
-}
-
-if (process.env.CONTEXT === "production") {
-  const googleAnalyticsCfg = {
-    resolve: "gatsby-plugin-google-analytics",
-    options: {
-      trackingId: "UA-143239978-1", // <- your tracking ID
-      // Defines where to place the tracking script - `true` in the head and `false` in the body
-      head: false,
-    }
-  };
-  cfg.plugins.push(googleAnalyticsCfg);
-}
-
-module.exports = cfg;
+};

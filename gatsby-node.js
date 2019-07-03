@@ -41,7 +41,7 @@ exports.createPages = ({ actions, graphql }) => {
         ),
         // additional data can be passed via context
         context: {
-          id,
+          id: edge.node.id
         },
       })
     })
@@ -65,7 +65,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: tagPath,
         component: path.resolve(`src/templates/tags.js`),
         context: {
-          tag,
+          tag: tag
         },
       })
     })

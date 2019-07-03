@@ -73,12 +73,8 @@ const Navbar = class extends React.Component {
                 <span className="icon has-text-success"><FaMapMarker /></span>
                 <span>Neighborhood</span>
               </Link>
-              <Link className="navbar-item" to="/gallery">
-                <span className="icon has-text-warning"><FaImages /></span>
-                <span>Gallery</span>
-              </Link>
               <Link className="navbar-item" to="/map">
-                <span className="icon has-text-info"><FaMap /></span>
+                <span className="icon has-text-warning"><FaMap /></span>
                 <span>Map</span>
               </Link>
               <Link className="navbar-item" to="/about">
@@ -91,7 +87,7 @@ const Navbar = class extends React.Component {
               {/* <Link className="navbar-item" to="/blog">
                 Blog
               </Link> */}
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item has-text-info" to="/contact">
                 <span className="icon"><FaIdBadge /></span>
                 <span>Contact</span>
               </Link>

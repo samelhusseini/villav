@@ -92,7 +92,6 @@ AmenitiesPageTemplate.propTypes = {
 }
 
 const AmenitiesPage = ({ data }) => {
-  if (!data) return <Layout />
   const { frontmatter } = data.markdownRemark
 
   return (

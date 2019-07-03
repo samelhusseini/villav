@@ -16,7 +16,7 @@ export default class Index extends React.Component {
     render() {
         const images = [
             {
-                original: 'http://lorempixel.com/1000/600/nature/1/',
+                original: '/img/main.jpg',
                 thumbnail: 'http://lorempixel.com/250/150/nature/1/',
             },
             {
@@ -31,7 +31,11 @@ export default class Index extends React.Component {
         return (
             <Layout>
                 <section>
-                    <ImageGallery items={images} autoPlay={false} showThumbnails={false} />
+                    <ImageGallery items={images} 
+                        lazyLoad={false} showBullets={true}
+                        showPlayButton={false} 
+                        autoPlay={false} showThumbnails={false}
+                        additionalClass="app-image-gallery" />
                 </section>
             </Layout>
         )

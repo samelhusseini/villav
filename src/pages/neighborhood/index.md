@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: Spetses, Greece
+title: Spetses, Greece 🇬🇷
 ---
 ### The neighborhood
 

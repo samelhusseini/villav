@@ -72,7 +72,7 @@ const Footer = class extends React.Component {
                 </section>
               </div> */}
               <div className="column social">
-                <a title="whatsapp" href="https://wa.me/17347264265">
+                <a title="whatsapp" href="https://wa.me/17347264265" target="_blank">
                   <FaWhatsapp size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#25D366' }} />
                 </a>
                 {/* <a title="facebook" href="https://facebook.com">
@@ -81,7 +81,7 @@ const Footer = class extends React.Component {
                 <a title="twitter" href="https://twitter.com">
                   <FaTwitter size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#40B1E1' }} />
                 </a> */}
-                <a title="instagram" href="https://instagram.com/villav.gr">
+                <a title="instagram" href="https://instagram.com/villav.gr" target="_blank">
                   <FaInstagram size="1.5em" style={{ width: '1.5em', height: '1.5em', color: '#D42B5D' }} />
                 </a>
               </div>

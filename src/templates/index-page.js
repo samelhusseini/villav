@@ -1,128 +1,193 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-}) => (
-  <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        {/* <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3> */}
-      </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+export class IndexPageTemplate extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      galleryOpen: false
+    };
+  }
+
+  toggleGallery = () => {
+    this.setState({
+      galleryOpen: !this.state.galleryOpen
+    })
+  }
+
+  render() {
+    const {
+      mainimage,
+      title,
+      heading,
+      subheading,
+      mainpitch,
+      description,
+      intro,
+      main
+    } = this.props;
+
+    const { galleryOpen } = this.state;
+
+    const images = [
+      { source: '/img/main.jpg' },
+      { source: '/img/sea-view.jpg' },
+      { source: '/img/terrace.jpg' },
+      { source: '/img/front-view.jpg' },
+      { source: '/img/furniture.jpg' },
+      { source: '/img/garden.jpg' },
+      { source: '/img/kitchen.jpg' },
+      { source: '/img/living-room.jpg' },
+      { source: '/img/dining-room.jpg' },
+      { source: '/img/bedroom.jpg' },
+      { source: '/img/bedroom-2.jpg' },
+      { source: '/img/bedroom-3.jpg' },
+      { source: '/img/bedroom-4.jpg' },
+      { source: '/img/bedroom-5.jpg' },
+      { source: '/img/bathroom-4.jpg' },
+      { source: '/img/bathroom-5.jpg' },
+      { source: '/img/bedroom-sea-view.jpg' },
+      { source: '/img/garden-2.jpg' },
+      { source: '/img/terrace.jpg' },
+    ];
+    
+    return (
+      <div>
+        <div className="index-gallery" style={{ cursor: 'pointer' }} onClick={this.toggleGallery}>
+          <div className="columns is-hidden-tablet" style={{ height: '400px' }}>
+            <div
+              className="column is-full"
+              style={{
+                backgroundImage: `url(${
+                  main.images[0].image.childImageSharp ? main.images[0].image.childImageSharp.fluid.src : main.images[0].image
+                  })`,
+                backgroundSize: 'cover',
+                height: '400px'
+              }}
+            />
+          </div>
+          <div className="columns is-hidden-mobile" style={{ height: '500px' }}>
+            <div className="column is-half">
+              <div className="columns" style={{ height: '105%' }}>
+                <div
+                  className="column is-full"
+                  style={{
+                    backgroundImage: `url(${
+                      main.images[0].image.childImageSharp ? main.images[0].image.childImageSharp.fluid.src : main.images[0].image
+                      })`,
+                    backgroundSize: 'cover'
+                  }}
+                />
+              </div>
+            </div>
+            <div className="column is-half">
+              <div className="columns" style={{ height: '500px' }}>
+                <div className="column is-half">
+                  <div className="columns" style={{ height: '55%' }}>
+                    <div
+                      className="column is-full"
+                      style={{
+                        backgroundImage: `url(${
+                          main.images[1].image.childImageSharp ? main.images[1].image.childImageSharp.fluid.src : main.images[1].image
+                          })`,
+                        backgroundSize: 'cover'
+                      }} />
                   </div>
-                  <div className="tile">
-                    <p>{mainpitch.description}</p>
+                  <div className="columns" style={{ height: '50%' }}>
+                    <div
+                      className="column is-full"
+                      style={{
+                        backgroundImage: `url(${
+                          main.images[2].image.childImageSharp ? main.images[2].image.childImageSharp.fluid.src : main.images[2].image
+                          })`,
+                        backgroundSize: 'cover'
+                      }} />
                   </div>
                 </div>
-                {/* <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
+                <div className="column is-half">
+                  <div className="columns" style={{ height: '55%' }}>
+                    <div
+                      className="column is-full"
+                      style={{
+                        backgroundImage: `url(${
+                          main.images[3].image.childImageSharp ? main.images[3].image.childImageSharp.fluid.src : main.images[3].image
+                          })`,
+                        backgroundSize: 'cover'
+                      }} />
+                  </div>
+                  <div className="columns" style={{ height: '50%' }}>
+                    <div
+                      className="column is-full"
+                      style={{
+                        backgroundImage: `url(${
+                          main.images[4].image.childImageSharp ? main.images[4].image.childImageSharp.fluid.src : main.images[4].image
+                          })`,
+                        backgroundSize: 'cover'
+                      }} />
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div> */}
-                {/* <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
+          <div className='nav'>
+              <div className='button'>View Photos</div>
+          </div>
         </div>
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="section">
+              <div className="columns">
+                <div className="column is-10 is-offset-1">
+                  <div className="content">
+                    <div className="content">
+                      <div className="tile">
+                        <h1 className="title">{mainpitch.title}</h1>
+                      </div>
+                      <div className="tile">
+                        <h3 className="subtitle">{mainpitch.description}</h3>
+                      </div>
+                      <hr />
+                      <div className="column">
+  
+                        <p> <b>V is for Voyage</b> - the Voyage that brought you to Spetses, the Island of Spices</p>
+                        <p> <b>V is for Vista</b> - the 180-degree voluptuous view of a sparkling sunrise over Hydra, the azure Spetses Straits, and the cosmopolitan Spetses town</p>
+                        <p> <b>V is for Vokos</b> - the owners’ famous surname, which conjures up historic 19th century sea battles for Greek Independence and heroic valor</p>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <ModalGateway>
+          {galleryOpen ? (
+            <Modal onClose={this.toggleGallery}>
+              <Carousel views={images} />
+            </Modal>
+          ) : null}
+        </ModalGateway>
       </div>
-    </section>
-  </div>
-)
+    )
+  }
+}
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  mainimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  main: PropTypes.shape({
+    images: PropTypes.array,
   }),
 }
 
@@ -132,13 +197,13 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
+        mainimage={frontmatter.mainimage}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   )
@@ -159,7 +224,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
+        mainimage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
@@ -173,19 +238,16 @@ export const pageQuery = graphql`
           description
         }
         description
-        intro {
-          blurbs {
+        main {
+          images {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 1024, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
-            text
           }
-          heading
-          description
         }
       }
     }

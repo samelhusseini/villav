@@ -5,7 +5,7 @@ import Layout from '../../components/Layout'
 
 import "react-image-gallery/styles/css/image-gallery.css";
 
-export default class Index extends React.Component {
+export default class Gallery extends React.Component {
     constructor(props) {
         super(props)
         this.state = {

@@ -158,7 +158,7 @@ const Navbar = class extends React.Component {
               <span className="icon has-text-warning"><FaMap /></span>
               <span>Map</span>
             </Link>
-            <Link className="navbar-item" to="/about">
+            <Link className="navbar-item" to="/reviews">
               <span className="icon has-text-danger"><FaHeart /></span>
               <span>Reviews</span>
             </Link>

@@ -88,7 +88,7 @@ const Navbar = class extends React.Component {
 
                 <hr className="navbar-divider" />
 
-                <Link className="navbar-item" to="/spetses/history">
+                <Link className="navbar-item" to="/spetses/gettingaround">
                   <span>
                     <span className="icon has-text-success">
                       <FaMotorcycle />
@@ -101,7 +101,7 @@ const Navbar = class extends React.Component {
 
                 <hr className="navbar-divider" />
 
-                <Link className="navbar-item" to="/spetses/history">
+                <Link className="navbar-item" to="/spetses/guide">
                   <span>
                     <span className="icon has-text-primary">
                       <FaBook />
@@ -115,7 +115,7 @@ const Navbar = class extends React.Component {
                 <hr className="navbar-divider" />
 
 
-                <Link className="navbar-item" to="/spetses/history">
+                <Link className="navbar-item" to="/spetses/events">
                   <span>
                     <span className="icon has-text-info">
                       <FaCalendar />
@@ -128,7 +128,7 @@ const Navbar = class extends React.Component {
 
                 <hr className="navbar-divider" />
 
-                <Link className="navbar-item" to="/spetses/history">
+                <Link className="navbar-item" to="/spetses/eating">
                   <span>
                     <span className="icon has-text-warning">
                       <FaUtensils />
@@ -142,7 +142,7 @@ const Navbar = class extends React.Component {
                 <hr className="navbar-divider" />
 
 
-                <Link className="navbar-item" to="/spetses/history">
+                <Link className="navbar-item" to="/spetses/drinking">
                   <span>
                     <span className="icon has-text-danger">
                       <FaGlassCheers />

@@ -22,7 +22,6 @@ All times should be checked in advance.
 Times are on boards at both stops and buses usually start in May and end in September/October depending on passenger volume.
 
 
-
 ### Caiques/Kaiki's
 
 Caiques are traditionally small, wooden fishing boats. They have, over the past couple of decades, been used to transport tourists from place to place. Spetses, being famous for its boat building,is not short of Caiques, and the larger ones are used to take holiday makers to the beaches each day. These boats are moored at the main jetty, called 'Dapia' and they have signs on them advertising their beach destination. Most go to Ayia Anargyri and Ayia Paraskevi, Zogheria beach and across to the mainland to the port and beach of Kosta.

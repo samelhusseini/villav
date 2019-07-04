@@ -108,7 +108,7 @@ const Navbar = class extends React.Component {
                     </span>
                     <strong>Travel Guide</strong>
                     <br />
-                    Popular things to do &amp; see
+                    <span className="is-hidden-touch">Popular things to do &amp; see</span>
                   </span>
                 </Link>
 
@@ -122,7 +122,7 @@ const Navbar = class extends React.Component {
                     </span>
                     <strong>Events</strong>
                     <br />
-                    Find out what's happening
+                    <span className="is-hidden-touch">Find out what's happening</span>
                   </span>
                 </Link>
 
@@ -135,7 +135,7 @@ const Navbar = class extends React.Component {
                     </span>
                     <strong>Eating</strong>
                     <br />
-                    Popular places to eat
+                    <span className="is-hidden-touch">Popular places to eat</span>
                   </span>
                 </Link>
 

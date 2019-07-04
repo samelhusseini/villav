@@ -73,6 +73,7 @@ module.exports = {
               destinationDir: `${__dirname}/static`,
             },
           },
+          `gatsby-remark-responsive-iframe`
         ],
       },
     },

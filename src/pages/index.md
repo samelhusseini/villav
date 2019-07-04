@@ -16,8 +16,12 @@ description: >-
 main:
   images:
     - image: /img/home-jumbotron.jpg
-    - image: /img/main.jpg
-    - image: /img/balcony.jpg
-    - image: /img/front-view.jpg
-    - image: /img/main.jpg
+    - image: /img/home-jumbotron.jpg
+    - image: /img/home-jumbotron.jpg
+    - image: /img/home-jumbotron.jpg
+    - image: /img/home-jumbotron.jpg
+#    - image: /img/main.jpg
+#    - image: /img/balcony.jpg
+#    - image: /img/front-view.jpg
+#    - image: /img/main.jpg
 ---

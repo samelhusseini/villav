@@ -55,11 +55,11 @@ export class IndexPageTemplate extends React.Component {
       { caption: "Bedroom view", source: '/img/bedroom-sea-view.jpg' },
       { caption: "Garden", source: '/img/garden-2.jpg' },
     ];
-
+    
     return (
       <div>
-        <div className="index-gallery" style={{ cursor: 'pointer' }} onClick={this.toggleGallery}>
-          <div className="columns is-hidden-tablet" style={{ height: '400px' }}>
+        <div className="index-gallery" style={{ cursor: 'pointer' }}>
+          <div className="columns is-hidden-tablet" style={{ height: '400px'}}>
             <div
               className="column is-full"
               style={{
@@ -71,7 +71,7 @@ export class IndexPageTemplate extends React.Component {
               }}
             />
           </div>
-          <div className="columns is-hidden-mobile" style={{ height: '500px' }}>
+          <div className="columns is-hidden-mobile" style={{ height: '500px'}}>
             <div className="column is-half">
               <div className="columns" style={{ height: '105%' }}>
                 <div
@@ -135,7 +135,7 @@ export class IndexPageTemplate extends React.Component {
             </div>
           </div>
           <div className='nav'>
-            <div className='button'>View Photos</div>
+              <div className='button'>View Photos</div>
           </div>
         </div>
         <section className="section section--gradient">
@@ -153,11 +153,11 @@ export class IndexPageTemplate extends React.Component {
                       </div>
                       <hr />
                       <div className="column">
-
+  
                         <p> <b>V is for Voyage</b> - the Voyage that brought you to Spetses, the Island of Spices</p>
                         <p> <b>V is for Vista</b> - the 180-degree voluptuous view of a sparkling sunrise over Hydra, the azure Spetses Straits, and the cosmopolitan Spetses town</p>
                         <p> <b>V is for Vokos</b> - the owners’ famous surname, which conjures up historic 19th century sea battles for Greek Independence and heroic valor</p>
-
+  
                       </div>
                     </div>
                   </div>

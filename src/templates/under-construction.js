@@ -6,7 +6,6 @@ export default class UnderConstruction extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-
         }
     }
 

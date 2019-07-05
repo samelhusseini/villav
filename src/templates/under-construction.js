@@ -1,5 +1,6 @@
 import React from 'react'
 
+import '../components/all.sass'
 import logo from '../img/logo.svg'
 
 export default class UnderConstruction extends React.Component {

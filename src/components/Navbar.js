@@ -41,7 +41,7 @@ const Navbar = class extends React.Component {
       >
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+            <img src={logo} alt="Villa V" style={{ width: '88px' }} />
           </Link>
           <a className="navbar-item is-hidden-desktop" href="https://airbnb.com" target="_blank">
             <span className="button is-small is-primary">

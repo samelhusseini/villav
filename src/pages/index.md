@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: under-construction
 title: Villa V
 mainimage: /img/home-jumbotron.jpg
 heading: Test

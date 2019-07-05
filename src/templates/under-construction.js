@@ -12,7 +12,7 @@ export default class UnderConstruction extends React.Component {
 
     render() {
         return (
-            <section className="hero is-fullheight is-danger is-bold">
+            <section className="hero is-fullheight is-warning is-bold">
                 <div className="hero-body">
                     <div className="container has-text-centered">
                         <img src={logo} alt="Villa V" style={{ width: '300px' }} />

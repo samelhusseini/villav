@@ -2,6 +2,7 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
+    name: 'Villa V',
     title: 'Villa V - Luxurious island house with magical view - for Rent in Spetses, Attica, Greece',
     description: 'Villa V, designed and decorated by a leading Greek architect, is the perfect destination for (up to) 10 vacationers looking to experience Greece in its full beauty. With 5 bedrooms, each with its own bathroom and shower, a private pool, a fully-equipped kitchen, a fully-fenced garden and expansive courtyard, a Weber gas BBQ, and Wi-Fi everywhere, inside and outside within the property, you’ll have everything needed to make the most of your trip.',
   },

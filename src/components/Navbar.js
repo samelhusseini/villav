@@ -33,6 +33,7 @@ const Navbar = class extends React.Component {
   }
 
   render() {
+    const { name } = this.props;
     return (
       <nav
         className="navbar has-shadow is-spaced main-navigation"
@@ -41,7 +42,7 @@ const Navbar = class extends React.Component {
       >
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Villa V" style={{ width: '88px' }} />
+            <img src={logo} alt={name} style={{ width: '88px' }} />
           </Link>
           <a className="navbar-item is-hidden-desktop" href="https://airbnb.com" target="_blank">
             <span className="button is-small is-primary">
@@ -95,7 +96,7 @@ const Navbar = class extends React.Component {
                     </span>
                     <strong>Getting around</strong>
                     <br />
-                    
+
                   </span>
                 </Link>
 

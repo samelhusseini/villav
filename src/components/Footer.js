@@ -7,12 +7,13 @@ import { FaFacebook, FaWhatsapp, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = class extends React.Component {
   render() {
+    const { name } = this.props;
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <img
             src={logo}
-            alt="Villa V"
+            alt={name}
             style={{ width: '8em', height: '6em' }}
           />
         </div>
@@ -88,7 +89,7 @@ const Footer = class extends React.Component {
             </div>
           </div>
           <div className="column" style={{ fontSize: '12px' }}>
-            Copyright © 2018-2019 - Villa V
+            Copyright © 2018-2019 - {name}
           </div>
         </div>
       </footer>

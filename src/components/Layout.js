@@ -6,7 +6,7 @@ import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+  const { name, title, description } = useSiteMetadata()
   return (
     <div>
       <Helmet>
@@ -39,16 +39,16 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:site_name" content="Villa V" />
+        <meta property="og:site_name" content={name} />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="https://villav.gr" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar />
+      <Navbar name={name} />
       <div>{children}</div>
-      <Footer />
+      <Footer name={name} />
     </div>
   )
 }

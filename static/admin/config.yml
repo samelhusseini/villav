@@ -72,6 +72,7 @@ collections:
 
   - name: "spetses"
     label: "Spetses"
+    preview_path: "spetses/{{slug}}"
     files:
       - file: "src/pages/spetses/index.md"
         label: "Spetses"

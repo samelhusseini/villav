@@ -6,6 +6,7 @@ const useSiteMetadata = () => {
       query SITE_METADATA_QUERY {
         site {
           siteMetadata {
+            name
             title
             description
           }

@@ -11,7 +11,7 @@ export default class UnderConstruction extends React.Component {
     }
 
     render() {
-        const name = 'Villa V';
+        const name = 'Villa Cariso';
         return (
             <section className="hero is-fullheight is-warning is-bold">
                 <div className="hero-body">

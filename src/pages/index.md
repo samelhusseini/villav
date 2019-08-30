@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: Villa V
+title: Villa Cariso
 mainimage: /img/home-jumbotron.jpg
 heading: Test
 subheading: Test
 mainpitch:
-  title: Villa V
+  title: Villa Cariso
   description: |
     Spetses, Greece
 description: >-
@@ -13,15 +13,16 @@ description: >-
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
+content: >-
+  Kaldi is the ultimate spot for coffee lovers who want to learn about their
+  java’s origin and support the farmers that grew it. We take coffee production,
+  roasting and brewing seriously and we’re glad to pass that knowledge to
+  anyone.
 main:
   images:
-    - image: /img/home-jumbotron.jpg
-    - image: /img/home-jumbotron.jpg
-    - image: /img/home-jumbotron.jpg
-    - image: /img/home-jumbotron.jpg
-    - image: /img/home-jumbotron.jpg
-#    - image: /img/main.jpg
-#    - image: /img/balcony.jpg
-#    - image: /img/front-view.jpg
-#    - image: /img/main.jpg
+    - image: /img/listing/main.jpg
+    - image: /img/listing/outdoor.jpg
+    - image: /img/listing/lounge.jpg
+    - image: /img/listing/kitchen.jpg
+    - image: /img/listing/patio.jpg
 ---

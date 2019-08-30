@@ -42,9 +42,9 @@ const Navbar = class extends React.Component {
       >
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt={name} style={{ width: '88px' }} />
+            <img src={logo} alt={name} style={{ width: '120px' }} />
           </Link>
-          <a className="navbar-item is-hidden-desktop" href="https://airbnb.com" target="_blank">
+          <a className="navbar-item is-hidden-desktop" href="https://www.airbnb.com/rooms/38164398" target="_blank">
             <span className="button is-small is-primary">
               Book
             </span>
@@ -178,7 +178,7 @@ const Navbar = class extends React.Component {
             <div className="navbar-item">
               <div className="field is-grouped is-grouped-multiline">
                 <p className="control">
-                  <a className="button is-medium is-primary" href="https://airbnb.com" target="_blank">
+                  <a className="button is-medium is-primary" href="https://www.airbnb.com/rooms/38164398" target="_blank">
                     <strong>Book</strong>
                   </a>
                 </p>

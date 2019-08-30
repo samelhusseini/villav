@@ -36,29 +36,26 @@ export class IndexPageTemplate extends React.Component {
     const { galleryOpen } = this.state;
 
     const images = [
-      { caption: "Pool view", source: '/img/main.jpg' },
-      { caption: "Sea view", source: '/img/sea-view.jpg' },
-      { caption: "Terrace", source: '/img/terrace.jpg' },
-      { caption: "Front view", source: '/img/front-view.jpg' },
-      { caption: "Furniture", source: '/img/furniture.jpg' },
-      { caption: "Garden", source: '/img/garden.jpg' },
-      { caption: "Kitchen", source: '/img/kitchen.jpg' },
-      { caption: "Living room", source: '/img/living-room.jpg' },
-      { caption: "Diving room", source: '/img/dining-room.jpg' },
-      { caption: "Bedroom 1", source: '/img/bedroom.jpg' },
-      { caption: "Bedroom 2", source: '/img/bedroom-2.jpg' },
-      { caption: "Bedroom 3", source: '/img/bedroom-3.jpg' },
-      { caption: "Bedroom 4", source: '/img/bedroom-4.jpg' },
-      { caption: "Bedroom 5", source: '/img/bedroom-5.jpg' },
-      { caption: "Bathroom 1", source: '/img/bathroom-4.jpg' },
-      { caption: "Bathroom 2", source: '/img/bathroom-5.jpg' },
-      { caption: "Bedroom view", source: '/img/bedroom-sea-view.jpg' },
-      { caption: "Garden", source: '/img/garden-2.jpg' },
+      { caption: "Main view", source: '/img/listing/main.jpg' },
+      { caption: "Outdoor space", source: '/img/listing/outdoor.jpg' },
+      { caption: "Kitchen", source: '/img/listing/kitchen.jpg' },
+      { caption: "Lounge room", source: '/img/listing/lounge.jpg' },
+      { caption: "Patio", source: '/img/listing/patio.jpg' },
+      { caption: "Pool side", source: '/img/listing/pool.jpg' },
+      { caption: "Bedroom 1 - Vintage Soul", source: '/img/listing/bedroom1.jpg' },
+      { caption: "Bedroom 2 - Blue Sea", source: '/img/listing/bedroom2.jpg' },
+      { caption: "Bedroom 3 - Autumn Leaves", source: '/img/listing/bedroom3.jpg' },
+      { caption: "Bedroom 4 - Seagulls", source: '/img/listing/bedroom4.jpg' },
+      { caption: "Bedroom 5 - The Boat Cabin", source: '/img/listing/bedroom5.jpg' },
+      { caption: "Bar", source: '/img/listing/bar.jpg' },
+      { caption: "Fireplace", source: '/img/listing/fireplace.jpg' },
+      { caption: "", source: '/img/listing/artwork.jpg' },
+      { caption: "", source: '/img/listing/limonchello.jpg' },
     ];
     
     return (
       <div>
-        <div className="index-gallery" style={{ cursor: 'pointer' }}>
+        <div className="index-gallery" style={{ cursor: 'pointer' }} onClick={this.toggleGallery}>
           <div className="columns is-hidden-tablet" style={{ height: '400px'}}>
             <div
               className="column is-full"
@@ -153,10 +150,7 @@ export class IndexPageTemplate extends React.Component {
                       </div>
                       <hr />
                       <div className="column">
-  
-                        <p> <b>V is for Voyage</b> - the Voyage that brought you to Spetses, the Island of Spices</p>
-                        <p> <b>V is for Vista</b> - the 180-degree voluptuous view of a sparkling sunrise over Hydra, the azure Spetses Straits, and the cosmopolitan Spetses town</p>
-                        <p> <b>V is for Vokos</b> - the owners’ famous surname, which conjures up historic 19th century sea battles for Greek Independence and heroic valor</p>
+                        {mainpitch.content}
   
                       </div>
                     </div>

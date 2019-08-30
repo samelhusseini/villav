@@ -1,9 +1,9 @@
 ---
 templateKey: about-page
-title: Villa V
+title: Villa Cariso
 ---
 
-Villa V, designed and decorated by a leading Greek architect, is the perfect destination for (up to) 10 vacationers looking to experience Greece in its full beauty. With 5 bedrooms, each with its own bathroom and shower, a private pool, a fully-equipped kitchen, a fully-fenced garden and expansive courtyard, a Weber gas BBQ, and Wi-Fi everywhere, inside and outside within the property, you’ll have everything needed to make the most of your trip. 
+Villa Cariso, designed and decorated by a leading Greek architect, is the perfect destination for (up to) 10 vacationers looking to experience Greece in its full beauty. With 5 bedrooms, each with its own bathroom and shower, a private pool, a fully-equipped kitchen, a fully-fenced garden and expansive courtyard, a Weber gas BBQ, and Wi-Fi everywhere, inside and outside within the property, you’ll have everything needed to make the most of your trip. 
 
 The villa includes 5 spacious bedrooms, each one with its private bathroom (shower/toilet) and outfitted in a specific theme. Explore the comfort of each bedroom and enjoy your stay in modern comforts with personal touches.
 

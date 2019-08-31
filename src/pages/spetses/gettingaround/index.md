@@ -1,26 +1,21 @@
 ---
 templateKey: about-page
 title: Getting Around
-breadcrumbs:
-  - text: Spetses
-    path: spetses
-  - text: Getting Around
 ---
-
-### Busses
+### Buses
 
 There are 2 'bus lines' on the island, the difference being that they depart from two different points in the town and that they have two different drivers. 
 
 The first bus departs from the town beach, named Ayios Mamas and travels in a south-easterly direction, with its final destination being Ayia Paraskevi, the beach on the southern side of the island. 
 The other bus departs from the Poseidonion jetty and travels in a south-westerly direction, with its final destination being Vrelos Beach on the south-west of the island. 
 They both stop at other beaches on route: 
-- The Ayios Mamas stop bus stops at Ayia Marina; Kouzounos; Xilokersiza; Ayia Anargyri and then Ayia Paraskevi. 
-- The Poseidonion jetty stop bus stops at Kaiki Beach; Ligoneri and then Vrelos. 
+
+* The Ayios Mamas stop bus stops at Ayia Marina; Kouzounos; Xilokersiza; Ayia Anargyri and then Ayia Paraskevi. 
+* The Poseidonion jetty stop bus stops at Kaiki Beach; Ligoneri and then Vrelos. 
 
 Passengers usually buy a round trip ticket, although passengers stopping at Ayia Anargyri or Ayia Paraskevi may buy a one way ticket and then decide to take the boat back for a different experience. 
 All times should be checked in advance. 
 Times are on boards at both stops and buses usually start in May and end in September/October depending on passenger volume.
-
 
 ### Caiques/Kaiki's
 
@@ -32,10 +27,9 @@ They usually work in strict rotation. When the first boat fills up, they will he
 
 Spetses does not yet have access to ride share services, but there are a few taxis in operation on the island. Here are a couple taxi companies that we recommend:
 
-Taxi: 	***-***-****
+Taxi: 	_**\-**_-\*\*\*\*
 
 They are usually waiting in the harbour, parked near the horse buggies or on the jetty. You can book a taxi to meet you off the flying dolphin (or however you arrive). Usually in high season, they have already been booked for arrivals. However, if they are booked, they will point you in the direction of another one or they will arrange to come back and pick you and your luggage up.
-
 
 ### Horse Buggies
 
@@ -45,8 +39,6 @@ They can be pre-booked or potential passengers can just hail one and jump in. Th
 Check prices before you jump in.
 
 ### Motorbike Hire
-
-
 
 ### Water Taxis
 

@@ -4,6 +4,8 @@ title: Getting Around
 ---
 ### Buses
 
+![](https://ucarecdn.com/7c380e7e-af16-423d-bf73-956af534ccc9/)
+
 There are 2 'bus lines' on the island, the difference being that they depart from two different points in the town and that they have two different drivers. 
 
 The first bus departs from the town beach, named Ayios Mamas and travels in a south-easterly direction, with its final destination being Ayia Paraskevi, the beach on the southern side of the island. 
@@ -27,7 +29,7 @@ They usually work in strict rotation. When the first boat fills up, they will he
 
 Spetses does not yet have access to ride share services, but there are a few taxis in operation on the island. Here are a couple taxi companies that we recommend:
 
-Taxi: 	_**\-**_-\*\*\*\*
+Taxi: 	**_\-_**-\*\*\*\*
 
 They are usually waiting in the harbour, parked near the horse buggies or on the jetty. You can book a taxi to meet you off the flying dolphin (or however you arrive). Usually in high season, they have already been booked for arrivals. However, if they are booked, they will point you in the direction of another one or they will arrange to come back and pick you and your luggage up.
 
